@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hooked Fishing Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <h1>🎣 Hooked Fishing Store</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#share">Share Your Catch</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <h2>Welcome to Hooked Fishing!</h2>
+    <p>Your one-stop shop for rods, reels, and real adventure. Cast your line and reel in the best deals.</p>
+    <button id="surpriseBtn">🎣 Click for Fishing Tip!</button>
+    <p id="tip"></p>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="section">
+    <h2>Our Gear</h2>
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1528834359345-0f2a0e32d89f" alt="Fishing Rod">
+        <h3>Pro Angler Rod</h3>
+        <p>$89.99</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1602524810288-4c8ec442c3e6" alt="Fishing Reel">
+        <h3>Reel Master 3000</h3>
+        <p>$129.99</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1582991955550-52e83bfa1ba2" alt="Fishing Lures">
+        <h3>Lure Pack (10)</h3>
+        <p>$19.99</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Share Your Catch Section -->
+  <section id="share" class="section">
+    <h2>Share Your Catch</h2>
+    <p>Show off your best catch using Hooked Fishing gear!</p>
+    <form id="catchForm">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="photo">Upload a Photo:</label>
+      <input type="file" id="photo" accept="image/*" required>
+
+      <button type="submit">Share</button>
+    </form>
+    <div id="catchGallery"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hooked Fishing Store | Cast, Catch, Repeat 🎣</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
